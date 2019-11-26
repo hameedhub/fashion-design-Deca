@@ -5,28 +5,35 @@
       "firstName": "Daniel",
       "lastName": "Micheal",
       "email": "dan@test.com",
-      "password": "1234"
+      "password": "$2a$10$L31Z2OVXVpdt6y.P5TSTy.VTyLVHhEwI1tIgR0pUBR3n4x9R/Fulm"
     },
     {
       "id": 2,
       "firstName": "James",
       "lastName": "Mathew",
       "email": "james@test.com",
-      "password": "1234"
+      "password": "$2a$10$L31Z2OVXVpdt6y.P5TSTy.VTyLVHhEwI1tIgR0pUBR3n4x9R/Fulm"
     },
     {
       "id": 3,
       "firstName": "Ola",
       "lastName": "Kemi",
       "email": "ola@test.com",
-      "password": "1234"
+      "password": "$2a$10$L31Z2OVXVpdt6y.P5TSTy.VTyLVHhEwI1tIgR0pUBR3n4x9R/Fulm"
     },
     {
       "id": 4,
       "firstName": "Prince",
       "lastName": "Okafor",
       "email": "prince@test.com",
-      "password": "1234"
+      "password": "$2a$10$L31Z2OVXVpdt6y.P5TSTy.VTyLVHhEwI1tIgR0pUBR3n4x9R/Fulm"
+    },
+    {
+      "email": "test@test.com",
+      "password": "$2a$10$L31Z2OVXVpdt6y.P5TSTy.VTyLVHhEwI1tIgR0pUBR3n4x9R/Fulm",
+      "firstName": "Test",
+      "lastName": "Test",
+      "id": 5
     }
   ],
   "styles": [
@@ -46,7 +53,7 @@
       "id": 3,
       "name": "Chic Fashion",
       "description": "Chic is characterized by being trendy and fashionable. It is a type of statement to make oneself look smart and striking. Whoever follows this style makes sure to choose well tailored stylish designs that are pretty classy. Strong colors which are not extravagant, comes as a part of the chic style. It is something that relates to being casual in not so casual way. If you are part of this style, your wardrobe is a symbol of style.",
-      "userId":2
+      "userId": 2
     },
     {
       "id": 4,
@@ -66,16 +73,15 @@
       "description": "Casual is a combination of elegance with comfort. This simple style has caught up well with the passage of time and is one of the most sought after fashion styles as of now. None of the exotic and bold items will be in the wardrobe of a woman who follows casual fashion. They would prefer to put on a white T-Shirt and black pants over tight and uncomfortable exotics any day. They tend to keep it simple and match the accessories with whatever the simple clothing they are wearing. ",
       "userId": 2
     }
-
   ],
   "bookings": [
     {
-    "styleId": 6,
-    "userId": 1
-    },{
+      "styleId": 6,
+      "userId": 1
+    },
+    {
       "styleId": 1,
       "userId": 2
     }
   ]
-
 }

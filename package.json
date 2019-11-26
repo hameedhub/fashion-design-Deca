@@ -2,9 +2,9 @@
   "name": "fashion-design-deca",
   "version": "1.0.0",
   "description": "Fashion store fake REST API",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "json-server --watch db.json"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/hameedhub/fashion-design-Deca#readme",
   "dependencies": {
-    "json-server": "^0.15.1"
+    "json-server": "^0.15.1",
+    "json-server-auth": "^1.2.1"
   }
 }
