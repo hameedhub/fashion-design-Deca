@@ -1,0 +1,81 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Daniel",
+      "lastName": "Micheal",
+      "email": "dan@test.com",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "firstName": "James",
+      "lastName": "Mathew",
+      "email": "james@test.com",
+      "password": "1234"
+    },
+    {
+      "id": 3,
+      "firstName": "Ola",
+      "lastName": "Kemi",
+      "email": "ola@test.com",
+      "password": "1234"
+    },
+    {
+      "id": 4,
+      "firstName": "Prince",
+      "lastName": "Okafor",
+      "email": "prince@test.com",
+      "password": "1234"
+    }
+  ],
+  "styles": [
+    {
+      "id": 1,
+      "name": "Vintage Fashion",
+      "description": "One of the most adorable fashion styles, it definitely is a blast from the past. From flapper dresses to pinup clothing and from retro swimwear to indie clothing, the vintage look is a culmination of fashion from the 20’s to the 70’s. It is the one trend that overcame the test of time.",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "name": "Bohemian Fashion",
+      "description": "The best way to describe bohemian would be to use the word non-traditional. A style which is similar to arty, bohemian style uses extravagant and wild patterns on exotic textures. It can be characterized as an inspiration from gypsy and hippie looks. It is more commonly referred to as ‘Boho’.",
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "name": "Chic Fashion",
+      "description": "Chic is characterized by being trendy and fashionable. It is a type of statement to make oneself look smart and striking. Whoever follows this style makes sure to choose well tailored stylish designs that are pretty classy. Strong colors which are not extravagant, comes as a part of the chic style. It is something that relates to being casual in not so casual way. If you are part of this style, your wardrobe is a symbol of style.",
+      "userId":2
+    },
+    {
+      "id": 4,
+      "name": "Artsy Fashion",
+      "description": "Arty as the names suggest, invokes the independent creativity of the person. These are usually the ones who want to make a statement of their own by the clothes they wear. Most of the times, they are the creators of their own fashion style. They do not follow the traditional norms and make the path for themselves. The unconventional for of art leads to innovating very many interesting forms of trends which are not restricted by the usual textbook nature of creating fashion.",
+      "userId": 3
+    },
+    {
+      "id": 5,
+      "name": "Sexy Fashion",
+      "description": "It is all about showing off your best features. Let all the best things about your out there to get the attention of male. Mostly accompanied by heels, shorts or tight skirts, this style leaves the bare minimum for imagination. Exposure is to be at the maximum and as much as skin is shown. Tight fitting tops are chosen to show off the features like breasts and stomach. This is the type of fashion which is not every woman’s cup of tea. You got a lot of guts to pull off this one.",
+      "userId": 2
+    },
+    {
+      "id": 6,
+      "name": "Casual Fashion",
+      "description": "Casual is a combination of elegance with comfort. This simple style has caught up well with the passage of time and is one of the most sought after fashion styles as of now. None of the exotic and bold items will be in the wardrobe of a woman who follows casual fashion. They would prefer to put on a white T-Shirt and black pants over tight and uncomfortable exotics any day. They tend to keep it simple and match the accessories with whatever the simple clothing they are wearing. ",
+      "userId": 2
+    }
+
+  ],
+  "bookings": [
+    {
+    "styleId": 6,
+    "userId": 1
+    },{
+      "styleId": 1,
+      "userId": 2
+    }
+  ]
+
+}
