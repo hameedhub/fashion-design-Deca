@@ -16,8 +16,8 @@
         <label for="nav"></label>
         <nav>
             <ul>
-                <li><a class="active" href="dashboard.html">Dashboard</a></li>
-                <li><a href="style.html">Styles</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a class="active" href="#">Styles</a></li>
                 <li><a href="#">Booked</a></li>
                 <li><a href="#">Profile</a></li>
                 <li><a href="index.html">Logout</a></li>
@@ -25,8 +25,10 @@
         </nav>
     </header>
     <main class="wrap">
-
         <section class="container">
+            <div class="title" >
+                <h4>My Style</h4> <button id="myBtn" class="btn btn-success">Create Style</button>
+            </div>
             <input class="search" type="text" id="myInput" onkeyup="search()" placeholder="Search filter.. ">
             <ul class="box trans" id="myUL">
                 <li class="collapsible"><a>StreetWear Style</a></li>
@@ -43,10 +45,24 @@
                 </div>
             </ul>
         </section>
-
     </main>
+    <div id="myModal" class="modal">
 
+            <div class="modal-content">
+                <div class="modal-header">
+                  <span class="close">&times;</span>
+                  <h5>Style Details</h5>
+                </div>
+                <div class="modal-body">
+                  <input type="text" name="name" placeholder="Style Name"> 
+                  <textarea rows="4" cols="5" placeholder="Description"></textarea>
+                  <button class="btn btn-success">Save</button>
+                </div>
+          </div>
+
+      </div>
     <script src="public/js/custom.js"></script>
+
 </body>
 
 </html>
