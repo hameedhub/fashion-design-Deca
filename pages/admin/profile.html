@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile Page </title>
+</head>
+<link rel='stylesheet' href='../public/css/style.css' type='text/css' />
+
+<body>
+
+    <header>
+        <a class="logo">Fashion.</a>
+        <input id="nav" type="checkbox">
+        <label for="nav"></label>
+        <nav>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a class="active" href="profile.html">Profile</a></li>
+                    <li><a onclick="logout()" href="#">Logout</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main class="wrap">
+        <section class="container">
+            <div class="box">
+                <form id="profile" method="POST" action="users"  class="modal-body">
+                    <input name="firstName" value=""  placeholder="First Name">
+                    <input name="lastName" value="" placeholder="Last Name">
+                    <input name="email" class="" value="" placeholder="Email Address" disabled >
+                    <button class="btn btn-default">Update</button>
+
+                </form>
+            </div>
+
+        </section>
+    </main>
+    <script src="../public/js/jquery.js"></script>
+    <script src="js/access.js"></script>
+    <script src="../public/js/profile.js"></script>
+</body>
+</html>

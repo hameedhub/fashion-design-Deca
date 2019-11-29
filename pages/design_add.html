@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Design </title>
+</head>
+<link rel='stylesheet' href='public/css/style.css' type='text/css' />
+
+<body>
+
+    <header>
+        <a class="logo">Fashion.</a>
+        <input id="nav" type="checkbox">
+        <label for="nav"></label>
+        <nav>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a class="active" href="design.html">Design</a></li>
+                    <li><a href="style.html">Styles</a></li>
+                    <li><a href="book.html">Booked</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a onclick="logout()" href="#">Logout</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main class="wrap">
+        <section class="container">
+            <div class="title">
+                <h4>Create Design</h4>
+            </div>
+            <div class="box">
+                <form id="saveDesign" method="POST" action="designs"  class="modal-body">
+                    <input type="text" name="name" value=""  placeholder="Design Name" required/>
+                    <input type="text" name="measurement" value="" placeholder="Measurement" required />
+                    <select id="selectStyle" name="styleId" style="height: 5%;" required >
+                        <option value="">- Please select a Style</option>
+                    </select>
+                    <input type="text" name="fabric" value="" placeholder="Fabric" required />
+                    <input type="text" name="color" value="" placeholder="Color" required />
+                    <input type="hidden" name="userId"  />
+                    <button class="btn btn-default">Save</button>
+
+                </form>
+            </div>
+
+        </section>
+    </main>
+    <script src="public/js/jquery.js"></script>
+    <script src="public/js/access.js"></script>
+    <script src="public/js/design_add.js"></script>
+</body>
+</html>

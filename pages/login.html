@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login - Fashion.</title>
+</head>
+<link rel='stylesheet' href='public/css/style.css' type='text/css' />
+
+<body>
+  <section class="cover">
+  
+      <header>
+          <a class="logo" href="../index.html">Fashion.</a>
+          <input id="nav" type="checkbox">
+          <label for="nav"></label>
+          <nav>
+              <ul>
+                  
+                  <li><a href="../design.html">Design</a></li>
+                  <li><a href="../style.html">Styles</a></li>
+              </ul>
+          </nav>
+      </header>   
+                 
+  <div class="form-modal">
+
+    <div class="form-toggle">
+      <button id="login-toggle" onclick="toggleLogin()">log in</button>
+      <button id="signup-toggle" onclick="toggleSignup()">sign up</button>
+    </div>
+
+    <div id="login-form">
+      <form id="login" action="login" method="POST">
+        <input type="text" name="email" placeholder="Email Address" />
+        <input type="password" name="password" placeholder="Password" />
+        <div id="error"></div>
+
+        <button type="submit" class="btn login">login</button>
+      </form>
+    </div>
+
+    <div id="signup-form">
+      <form id="signup" action="signup" method="POST">
+        <input type="text" name="firstName" placeholder="First Name"  required />
+        <input type="text" name="lastName" placeholder="Last Name"required />
+        <input type="email" name="email" placeholder="Email Address" />
+        <input type="password" name="password" placeholder="Password" />
+        <input type="hidden" name="role" value="user" />
+        <div id="errorSignup"></div>
+        <button type="submit" class="btn signup">create account</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+  <script src="public/js/jquery.js"></script>
+  <script src="public/js/custom.js"></script>
+  <script src="public/js/script.js"></script>
+</body>
+
+</html>

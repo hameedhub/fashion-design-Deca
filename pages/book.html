@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+</head>
+<link rel='stylesheet' href='public/css/style.css' type='text/css' />
+
+<body>
+
+    <header>
+        <a class="logo">Fashion.</a>
+        <input id="nav" type="checkbox">
+        <label for="nav"></label>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="style.html">Styles</a></li>
+                <li><a class="active" href="book.html">Booked</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a onclick="logout()" href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="wrap">
+
+        <section class="container">
+                <div class="title" >
+                        <h4>Bookings</h4>
+                    </div>
+                <input class="search" type="text" id="myInput" onkeyup="search()" placeholder="Search filter.. ">
+                <ul class="box trans" id="myUL">
+                    
+                </ul>
+        </section>
+    </main>
+    <script src="public/js/custom.js"></script>
+    <script src="public/js/access.js"></script>
+    <script src="public/js/jquery.js"></script>
+    <script src="public/js/book.js"></script>
+</body>
+</html>
