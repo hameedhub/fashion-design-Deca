@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Update Style </title>
+</head>
+<link rel='stylesheet' href='public/css/style.css' type='text/css' />
+
+<body>
+
+    <header>
+        <a class="logo">Fashion.</a>
+        <input id="nav" type="checkbox">
+        <label for="nav"></label>
+        <nav>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a class="active" href="style.html">Styles</a></li>
+                    <li><a href="book.html">Booked</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a onclick="logout()" href="#">Logout</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main class="wrap">
+        <section class="container">
+            <div class="title">
+                <h4>Update Style</h4>
+            </div>
+            <div class="box">
+                <form id="updateStyle" method="POST" action="styles"  class="modal-body">
+                    <input type="text" name="name" value=""  placeholder="Style Name" required/>
+                    <textarea name="description" rows="5" placeholder="Description"></textarea>
+                    <input type="hidden" name="id" value="id"  />
+                    <button class="btn btn-default">Update</button>
+
+                </form>
+            </div>
+
+        </section>
+    </main>
+    <script src="public/js/jquery.js"></script>
+    <script src="public/js/access.js"></script>
+    <script src="public/js/style_update.js"></script>
+</body>
+</html>
